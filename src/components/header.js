@@ -12,6 +12,10 @@ const Header = (props) => {
   );
 };
 
+Header.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
 const styles = {
   textStyle: {
     fontSize: 20,
@@ -29,10 +33,6 @@ const styles = {
     elevation: 2,
     position: 'relative',
   },
-};
-
-Header.propTypes = {
-  text: PropTypes.string.isRequired,
 };
 
 export default Header;
